@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.scss']
+	selector: 'app-heroes',
+	templateUrl: './heroes.component.html',
+	styleUrls: ['./heroes.component.scss'],
 })
-export class HeroesComponent implements OnInit {
+export class HeroesComponent {
+	name: string = 'Ironman';
+	age: number = 45;
 
-  constructor() { }
+	get capitalizedName() {
+		return this.name.toUpperCase();
+	}
 
-  ngOnInit(): void {
-  }
-
+	getName(): string {
+		return `${this.name} - ${this.age}`;
+	}
 }
