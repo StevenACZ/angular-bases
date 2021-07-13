@@ -16,4 +16,12 @@ export class HeroesComponent {
 	getName(): string {
 		return `${this.name} - ${this.age}`;
 	}
+
+	changeName(name: string): void {
+		this.name = name;
+	}
+
+	changeAge(age: number): void {
+		this.age = age;
+	}
 }
