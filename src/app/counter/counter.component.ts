@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	selector: 'app-counter',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./counter.component.scss'],
 })
 export class CounterComponent {
-	title: string = 'Contador App';
+	@Input() title: string = 'Contador App';
 	total: number = 10;
 	base: number = 5;
 
