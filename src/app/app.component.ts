@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	title: string = 'Contador App';
 	total: number = 10;
-	base: number = 12;
+	base: number = 5;
 
 	counter(number: number, option: '+' | '-' | '*' | '/'): void {
 		switch (option) {
